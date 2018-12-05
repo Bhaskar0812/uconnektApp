@@ -1,0 +1,2401 @@
+{
+	"id": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+	"name": "uconnekt client server",
+	"description": "",
+	"order": [
+		"034c06b2-58c4-512f-3cae-2d96ad32ed9b",
+		"e31b12af-b14d-88dd-d373-7df2520ae113",
+		"de372297-8d16-862f-058d-a3f32c57e78a",
+		"8fa0da0e-815e-b2cf-51fc-8a2c22a02550",
+		"ff57a302-a2b4-e400-b966-9f5c12f76995",
+		"9117c205-4da9-7538-12bb-43b7bfb62805",
+		"6687c861-56b1-9824-13cb-a9bbfb6b9268",
+		"bb56efcf-d5ee-5154-2aa7-c96118b96fbd",
+		"65a44f64-4828-a415-c472-7447f99c1d4a",
+		"2bc08d22-e1c8-f033-4d30-2a62ce5815b6",
+		"202108a3-6a67-b88f-4e18-a2cdc5f6b6d6",
+		"009e9689-2386-8181-cdf5-f5fc8be76b6e",
+		"ec014bd9-23cc-070d-ee9c-da926a4c0208",
+		"6f7396b2-3b1b-2833-bc5e-b9adb86ee2a4",
+		"61a9b348-1f3e-7f3b-1e4b-5f879bf9d52c",
+		"4d5ac7e0-4fe9-9e00-fb14-8a7bff6d2bc0",
+		"a9be33eb-16ad-f189-f3be-acf70d2c7f5a",
+		"067f0b47-4cae-6b59-5a2f-097584595571",
+		"b9313a5f-fc7d-99b8-a9c7-1c7b278d9403",
+		"1157bea7-3470-dffc-96aa-18ceb9018c0a",
+		"ad88757e-a729-e22d-7f5f-9558512862c8",
+		"86da584a-bfdc-3be6-14ae-b638266dc5fd",
+		"a0b13a07-a7fd-bc29-3588-ed6fc98a500d",
+		"06595ca2-867f-c98e-f3df-2e187df6a032",
+		"d9bdcf93-1891-8982-2807-8d90037ea10d",
+		"1880e40d-dbcd-79db-3abe-bab7192b66af",
+		"d8effdf3-6868-652a-ba5c-f451b4c75727",
+		"c0df0f06-e9bb-3ab9-14b4-b29c88feece4",
+		"3e76ef81-4247-13de-c6ab-e9c4320d2812",
+		"e1fbd9e5-a4b3-9b83-e3ad-1ee7c0d200f3",
+		"dc0dc819-d1b9-24e7-9c48-49e5a6e66b1b",
+		"a13439b7-b3b0-b206-9d45-06bbc05bab5d",
+		"b64051cf-0627-bf70-40c7-03deab09d85f",
+		"6f162bc6-ab3c-80e0-f87b-e33aca1e2cc2",
+		"c836e849-caf0-f61e-8503-0a78e4187219",
+		"9a672f40-27a9-65c7-1041-dc6c4a57e124",
+		"98a52596-f886-b695-a21a-2dfb9dd96612",
+		"fe731caf-2086-6e47-a86a-40b1a07e1afc",
+		"6780ad2b-b408-a082-a2aa-776c012837f1",
+		"52042829-4d1a-16a7-4af7-b45a5e979e9e",
+		"c4935246-fdc3-ca27-df3e-def299e02d37",
+		"cc3c88da-29f5-66da-1609-20968ff35f2c"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1524894476951,
+	"owner": "4347520",
+	"public": false,
+	"requests": [
+		{
+			"id": "009e9689-2386-8181-cdf5-f5fc8be76b6e",
+			"headers": "authToken: 3b983d25e540af309549bf73cd8213e874ee3b3c\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "3b983d25e540af309549bf73cd8213e874ee3b3c",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://dev.uconnekt.com.au/service/users/updateBasicInfo",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "area_of_specialization",
+					"value": "3",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "address",
+					"value": "USA",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "bio",
+					"value": "What is Lorem Ipsum?",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "latitude",
+					"value": "63.00",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "longitude",
+					"value": "23",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "value",
+					"value": "3",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "strength",
+					"value": "3,4",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "city",
+					"value": "california",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "state",
+					"value": "frete",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "country",
+					"value": "frdetf",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1534228466507,
+			"name": "updateBasicInfo",
+			"description": "",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"responses": []
+		},
+		{
+			"id": "034c06b2-58c4-512f-3cae-2d96ad32ed9b",
+			"headers": "",
+			"headerData": [],
+			"url": "https://www.connektus.com.au/service/registration",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "fullName",
+					"value": "sachin",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "userType",
+					"value": "business",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "password",
+					"value": "111111",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "email",
+					"value": "bhaskarm.indiii@gmail.com",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "businessName",
+					"value": "Hello Ashish",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "phone",
+					"value": "9691665576",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1539183258895,
+			"name": "Registration",
+			"description": "",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"responses": []
+		},
+		{
+			"id": "06595ca2-867f-c98e-f3df-2e187df6a032",
+			"headers": "authToken: 5304deff592c8c8b4b535a2f5542a0c05922a53a\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "5304deff592c8c8b4b535a2f5542a0c05922a53a",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://uconnekt.com.au/service/users/getUserFavourites?user_id=370&limit=20&offset=0",
+			"queryParams": [
+				{
+					"key": "user_id",
+					"value": "370",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "limit",
+					"value": "20",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "offset",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1528291469739,
+			"name": "getUserFavourites",
+			"description": "",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"responses": [],
+			"collection_id": "a6e4632a-1563-30a5-322b-14ab0d49c544"
+		},
+		{
+			"id": "067f0b47-4cae-6b59-5a2f-097584595571",
+			"headers": "authToken: c8c698d07980bbd5ef5ebf9677a32b373e395bf6\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "c8c698d07980bbd5ef5ebf9677a32b373e395bf6",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://uconnekt.com.au/service/users/getCompany",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"data": null,
+			"dataMode": "params",
+			"name": "getCompany",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1526455335006,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collection_id": "a6e4632a-1563-30a5-322b-14ab0d49c544"
+		},
+		{
+			"id": "1157bea7-3470-dffc-96aa-18ceb9018c0a",
+			"headers": "authToken: asdasdsadsadsadsda\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "asdasdsadsadsadsda",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://dev.connektus.com.au/service/users/getMyProfile",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1539148824932,
+			"name": "getMyProfile",
+			"description": "",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"responses": []
+		},
+		{
+			"id": "1880e40d-dbcd-79db-3abe-bab7192b66af",
+			"headers": "authToken: asdasdsadasdasad\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "asdasdsadasdasad",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://dev.connektus.com.au/service/users/getUserPersonalInfo?user_id=139",
+			"queryParams": [
+				{
+					"key": "user_id",
+					"value": "139",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1539239671254,
+			"name": "getUserPersonalInfo",
+			"description": "",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"responses": []
+		},
+		{
+			"id": "202108a3-6a67-b88f-4e18-a2cdc5f6b6d6",
+			"headers": "authToken: 89b3b1ac10d6596e6ccd59f8a57ea278a76bd465\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "89b3b1ac10d6596e6ccd59f8a57ea278a76bd465",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://dev.connektus.com.au/service/users/updateExperience",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "current_job_title",
+					"value": "6",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "current_company",
+					"value": "Midiiii system's",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "current_start_date",
+					"value": "2018-04-24",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "current_finish_date",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "current_description",
+					"value": "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "previous_role",
+					"value": "[{\"experience\":\"3\",\"previous_company_name\":\"thjsssdfgdfgfdgdfgfdgshjj\",\"previous_description\":\"fgjyfgjuu\",\"previous_job_title\":\"22\",\"previous_role_id\":\"17\"},{\"experience\":\"1\",\"previous_company_name\":\"gssdfgdfgfddfgdfgdfgdffgdfgfdgfdgsyy to the you y\",\"previous_description\":\"hhh+TT+us\",\"previous_job_title\":\"22\",\"previous_role_id\":\"20\"},{\"experience\":\"4\",\"previous_company_name\":\"hhyssdfgdfgdfgdfgdfgdfggyyy\",\"previous_description\":\"hhjiiuu+to+the+only+one+who\",\"previous_job_title\":\"22\",\"previous_role_id\":\"\"}]",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "next_availability",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "next_speciality",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "next_location",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1539174350473,
+			"name": "updateExperience",
+			"description": "",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"responses": []
+		},
+		{
+			"id": "2bc08d22-e1c8-f033-4d30-2a62ce5815b6",
+			"headers": "authToken: 6721dd9fc1c284b6733bea57ca596a14d26be63b\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "6721dd9fc1c284b6733bea57ca596a14d26be63b",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://dev.uconnekt.com.au/service/users/addReview",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "review_for",
+					"value": "607",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "rating",
+					"value": "1",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "comments",
+					"value": "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "is_anonymous",
+					"value": "1",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1532070294836,
+			"name": "addReview",
+			"description": "",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"responses": []
+		},
+		{
+			"id": "3e76ef81-4247-13de-c6ab-e9c4320d2812",
+			"headers": "authToken: fcb453ec7840c9d64ffd7a0704181f6b6758a0af\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "fcb453ec7840c9d64ffd7a0704181f6b6758a0af",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "www.dev.uconnekt.com.au/service/users/getUserView?user_id=301&limit=20&offset=0",
+			"queryParams": [
+				{
+					"key": "user_id",
+					"value": "301",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "limit",
+					"value": "20",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "offset",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1536564557211,
+			"name": "getUserView",
+			"description": "",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"responses": []
+		},
+		{
+			"id": "4d5ac7e0-4fe9-9e00-fb14-8a7bff6d2bc0",
+			"headers": "authToken: 95170e55f1f3686d7e78400ac707807a84a3953d\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "95170e55f1f3686d7e78400ac707807a84a3953d",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://dev.connektus.com.au/service/users/getBusinessSearchList",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "speciality_id",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "job_title",
+					"value": "1",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "availability",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "location",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "strength",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "value",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "city",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "country",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "pagination",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "state",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "limit",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "offset",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1539183259729,
+			"name": "getIndivisualSearchList",
+			"description": "",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"responses": []
+		},
+		{
+			"id": "52042829-4d1a-16a7-4af7-b45a5e979e9e",
+			"headers": "authToken: 7862f98ec24d670a53550e3e1f919ff00d5fd375\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "7862f98ec24d670a53550e3e1f919ff00d5fd375",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://dev.connektus.com.au/service/users/profile_inactive_user",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"data": [
+				{
+					"key": "password",
+					"value": "111111",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "uprofile_inactive_user",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1536734968764,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "61a9b348-1f3e-7f3b-1e4b-5f879bf9d52c",
+			"headers": "authToken: ac44733ddc34093528aad851d5c7bfc2eadfb008\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "ac44733ddc34093528aad851d5c7bfc2eadfb008",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://uconnekt.com.au/service/users/addRecommends",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"data": [
+				{
+					"key": "recommend_for",
+					"value": "8",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "addRecommends",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1525675105434,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collection_id": "a6e4632a-1563-30a5-322b-14ab0d49c544"
+		},
+		{
+			"id": "65a44f64-4828-a415-c472-7447f99c1d4a",
+			"headers": "authToken: de509d95baecc5ddc5d14c0a8f32294d1f811c79\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "de509d95baecc5ddc5d14c0a8f32294d1f811c79",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://dev.uconnekt.com.au/service/users/profileUpdate",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "area_of_specialization",
+					"value": "4",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "address",
+					"value": "punjab",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "bio",
+					"value": "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. 😀",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "latitude",
+					"value": "67.00",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "longitude",
+					"value": "34",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "job_title",
+					"value": "10",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "fullName",
+					"value": "Bhaskar",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "businessName",
+					"value": "Accounts",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "company_logo",
+					"value": "",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "profileImage",
+					"value": "",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "city",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "state",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "country",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1533903375782,
+			"name": "profileUpdate",
+			"description": "",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"responses": []
+		},
+		{
+			"id": "6687c861-56b1-9824-13cb-a9bbfb6b9268",
+			"headers": "authToken: 348061009aa702c405aec7dbfd5ee5d231cc4f98\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "348061009aa702c405aec7dbfd5ee5d231cc4f98",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://dev.connektus.com.au/service/users/updateExperience",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "current_job_title",
+					"value": "86",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "current_company",
+					"value": "Midiiii system's",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "current_start_date",
+					"value": "2018-04-24",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "current_finish_date",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "previous_role",
+					"value": "[{\"experience\":\"3\",\"previous_company_name\":\"thjhjj\",\"previous_description\":\"fgjyfgjuu\",\"previous_job_title\":\"22\",\"previous_role_id\":\"\"},{\"experience\":\"1\",\"previous_company_name\":\"gyy to the you y\",\"previous_description\":\"hhh+TT+us\",\"previous_job_title\":\"22\",\"previous_role_id\":\"\"},{\"experience\":\"4\",\"previous_company_name\":\"hhygyyy\",\"previous_description\":\"hhjiiuu+to+the+only+one+who\",\"previous_job_title\":\"22\",\"previous_role_id\":\"\"}]",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "next_availability",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "next_speciality",
+					"value": "3",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "next_location",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "current_description",
+					"value": "test",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "expectedSalary",
+					"value": "0-20000",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1539148842405,
+			"name": "updateExperience",
+			"description": "",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"responses": []
+		},
+		{
+			"id": "6780ad2b-b408-a082-a2aa-776c012837f1",
+			"headers": "",
+			"headerData": [],
+			"url": "http://dev.connektus.com.au/service/resetPassword",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"data": [
+				{
+					"key": "email",
+					"value": "bhaskar.mindiii@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "reset password",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1536646332882,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "6f162bc6-ab3c-80e0-f87b-e33aca1e2cc2",
+			"headers": "authToken: 4facf23d1012c256655128b8838eb2c0dfad77f4\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "4facf23d1012c256655128b8838eb2c0dfad77f4",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "www.dev.uconnekt.com.au/service/requests/processData",
+			"folder": null,
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "requestBy",
+					"value": "349",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "requestFor",
+					"value": "361",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1535005303673,
+			"name": "processData",
+			"description": null,
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"responses": []
+		},
+		{
+			"id": "6f7396b2-3b1b-2833-bc5e-b9adb86ee2a4",
+			"headers": "authToken: ac44733ddc34093528aad851d5c7bfc2eadfb008\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "ac44733ddc34093528aad851d5c7bfc2eadfb008",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://uconnekt.com.au/service/users/addFavourites",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"data": [
+				{
+					"key": "favourite_for",
+					"value": "8",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "addFavourites",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1525675031381,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collection_id": "a6e4632a-1563-30a5-322b-14ab0d49c544"
+		},
+		{
+			"id": "86da584a-bfdc-3be6-14ae-b638266dc5fd",
+			"headers": "authToken: 31f63ce42fe281784b85a8f7b9abad83822e29ce\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "31f63ce42fe281784b85a8f7b9abad83822e29ce",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://dev.uconnekt.com.au/service/users/getUserReviews?user_id=&limit=2&offset=0",
+			"queryParams": [
+				{
+					"key": "user_id",
+					"value": "",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "limit",
+					"value": "2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "offset",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1531894085666,
+			"name": "getUserReviews",
+			"description": "",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"responses": []
+		},
+		{
+			"id": "8fa0da0e-815e-b2cf-51fc-8a2c22a02550",
+			"headers": "authToken: b4a9f9571f81ec984a21dcfc354a08e895982a83\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "b4a9f9571f81ec984a21dcfc354a08e895982a83",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://uconnekt.com.au/service/users/interviewRequest",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"data": [
+				{
+					"key": "type",
+					"value": "employer",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "interviewer_name",
+					"value": "jack",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "location",
+					"value": "pune",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "latitude",
+					"value": "63.00",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "longitude",
+					"value": "32",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "date",
+					"value": "2018-05-12",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "time",
+					"value": "03:23:00 PM",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "interview_for",
+					"value": "28",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"dataMode": "params",
+			"name": "interviewRequest",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1525097469754,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collection_id": "a6e4632a-1563-30a5-322b-14ab0d49c544"
+		},
+		{
+			"id": "9117c205-4da9-7538-12bb-43b7bfb62805",
+			"headers": "authToken: b4a9f9571f81ec984a21dcfc354a08e895982a83\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "b4a9f9571f81ec984a21dcfc354a08e895982a83",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://uconnekt.com.au/service/users/deleteRequest",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"data": [
+				{
+					"key": "request_id",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "deleteRequest",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1525097744569,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collection_id": "a6e4632a-1563-30a5-322b-14ab0d49c544"
+		},
+		{
+			"id": "98a52596-f886-b695-a21a-2dfb9dd96612",
+			"headers": "authToken: asdasdsadasdsadsadsasadsa\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "asdasdsadasdsadsadsasadsa",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://www.dev.uconnekt.com.au/service/users/badge_count_unread_views",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"data": null,
+			"dataMode": "params",
+			"name": "get_badge_count",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1536580571550,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "9a672f40-27a9-65c7-1041-dc6c4a57e124",
+			"headers": "authToken: 9a04f8167ccb46df69b12704dea327ba3dff351d\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "9a04f8167ccb46df69b12704dea327ba3dff351d",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://www.uconnekt.com.au/service/users/updateBusinessProfile",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "area_of_specialization",
+					"value": "3",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "address",
+					"value": "Australia",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "job_title",
+					"value": "3",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "Hello this is bhaskar",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "company_logo",
+					"value": "3.png",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1536564670280,
+			"name": "updateBusinessprofile",
+			"description": "",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"responses": []
+		},
+		{
+			"id": "a0b13a07-a7fd-bc29-3588-ed6fc98a500d",
+			"headers": "authToken: f2c29127c8a81f8578f5d44b639ee8daad7ca69e\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "f2c29127c8a81f8578f5d44b639ee8daad7ca69e",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://www.uconnekt.com.au/service/users/getUserRecommends?user_id=1&limit=20&offset=0",
+			"queryParams": [
+				{
+					"key": "user_id",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "limit",
+					"value": "20",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "offset",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1535618017076,
+			"name": "getUserRecommends",
+			"description": "",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"responses": []
+		},
+		{
+			"id": "a13439b7-b3b0-b206-9d45-06bbc05bab5d",
+			"headers": "authToken: d722633778a93dcd9a33c522acda409cc00d04e3\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "d722633778a93dcd9a33c522acda409cc00d04e3",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "www.dev.uconnekt.com.au/service/requests/acceptDeclinedRequest",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "action",
+					"value": "2",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "interviewId",
+					"value": "91",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1535444623070,
+			"name": "interview request response ",
+			"description": "",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"responses": []
+		},
+		{
+			"id": "a9be33eb-16ad-f189-f3be-acf70d2c7f5a",
+			"headers": "authToken: 6cdbcdfef921987d6b5906fdb340ea7a4aef0a20\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "6cdbcdfef921987d6b5906fdb340ea7a4aef0a20",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://dev.connektus.com.au/service/users/getIndivisualSearchList",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "speciality_id",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "rating",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "location",
+					"value": "",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "city",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "country",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "state",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "pagination ",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "employementType",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "expectedSalaryFrom",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "experienceFrom",
+					"value": "0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "experienceTo",
+					"value": "8",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "offset",
+					"value": "0",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "limit",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "company",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "job_title",
+					"value": "40",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "expectedSalaryTo",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "strength",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "value",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1539269801445,
+			"name": "getBusinessSearchList",
+			"description": "",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"responses": []
+		},
+		{
+			"id": "ad88757e-a729-e22d-7f5f-9558512862c8",
+			"headers": "authToken: bdcd7b6c56d822321ec662bac8968867562198c5\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "bdcd7b6c56d822321ec662bac8968867562198c5",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://dev.connektus.com.au/service/users/getPublicProfile?user_id=145",
+			"queryParams": [
+				{
+					"key": "user_id",
+					"value": "145",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1539148836324,
+			"name": "getPublicProfile",
+			"description": "",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"responses": []
+		},
+		{
+			"id": "b64051cf-0627-bf70-40c7-03deab09d85f",
+			"headers": "authToken: d722633778a93dcd9a33c522acda409cc00d04e3\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "d722633778a93dcd9a33c522acda409cc00d04e3",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "www.dev.uconnekt.com.au/service/requests/deleteRequest",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "interviewId",
+					"value": "69",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1534840872168,
+			"name": "delete interview Request",
+			"description": "",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"responses": []
+		},
+		{
+			"id": "b9313a5f-fc7d-99b8-a9c7-1c7b278d9403",
+			"headers": "authToken: 9aa417315afa890558c68b9ea64ae2de5b13db60\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "9aa417315afa890558c68b9ea64ae2de5b13db60",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://uconnekt.com.au/service/users/updateResume",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"data": [
+				{
+					"key": "resume",
+					"value": "",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "cv",
+					"value": "",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "updateResume",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1527058210553,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collection_id": "a6e4632a-1563-30a5-322b-14ab0d49c544"
+		},
+		{
+			"id": "bb56efcf-d5ee-5154-2aa7-c96118b96fbd",
+			"headers": "authToken: b091ee16f16a0e130b0f2ae55bac4fb0042f63e0\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "b091ee16f16a0e130b0f2ae55bac4fb0042f63e0",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://dev.connektus.com.au/service/users/getUserProfile",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1539148826292,
+			"name": "getUserProfile",
+			"description": "",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"responses": []
+		},
+		{
+			"id": "c0df0f06-e9bb-3ab9-14b4-b29c88feece4",
+			"headers": "",
+			"headerData": [],
+			"url": "http://dev.connektus.com.au/service/login",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "email",
+					"value": "ch.etanmindiii@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123456",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "userType",
+					"value": "business",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1539150177001,
+			"name": "login",
+			"description": "",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"responses": []
+		},
+		{
+			"id": "c4935246-fdc3-ca27-df3e-def299e02d37",
+			"headers": "authToken: 29b65f33e5b7c42847927d207fe204c76a893b18\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "29b65f33e5b7c42847927d207fe204c76a893b18",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://dev.connektus.com.au/service/users/profile_inactive_user",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "password",
+					"value": "111111",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1536903855480,
+			"name": "uprofile_inactive_user",
+			"description": "",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"responses": []
+		},
+		{
+			"id": "c836e849-caf0-f61e-8503-0a78e4187219",
+			"headers": "authToken: d722633778a93dcd9a33c522acda409cc00d04e3\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "d722633778a93dcd9a33c522acda409cc00d04e3",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "dev.uconnekt.com.au/service/requests/offerdNotOfferd",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "interviewId",
+					"value": "29",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "action",
+					"value": "1",
+					"description": "1 for offerd, 2 for not offerd",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1534228386528,
+			"name": "dev.uconnekt.com.au/service/requests/offerdNotOfferd",
+			"description": "",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"responses": []
+		},
+		{
+			"id": "cc3c88da-29f5-66da-1609-20968ff35f2c",
+			"headers": "authToken: d2c95385dcc6f36aea8148597b056c6c03030554\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "d2c95385dcc6f36aea8148597b056c6c03030554",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://dev.connektus.com.au/service/users/addFeedback",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"data": [
+				{
+					"key": "rating",
+					"value": "5",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "message",
+					"value": "Hello this is feedback email",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "subject",
+					"value": "Excellent service",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Feedback",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1537519979544,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "d8effdf3-6868-652a-ba5c-f451b4c75727",
+			"headers": "authToken: 8d9bdcf61862590455d21dc6ae147a22d891921a\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "8d9bdcf61862590455d21dc6ae147a22d891921a",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://www.connektus.com.au/service/users/updateIndivisualProfile",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "fullName",
+					"value": "chetan T",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "profileImage",
+					"value": "",
+					"type": "file",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "area_of_specialization",
+					"value": "47",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "strength",
+					"value": "6,13",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "value",
+					"value": "35,11",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "bio",
+					"value": "What is Lorem Ipsum?",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "address",
+					"value": "Indore, Madhya Pradesh, India",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "city",
+					"value": "Indore",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "state",
+					"value": "Madhya Pradesh",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "country",
+					"value": "India",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "latitude",
+					"value": "22.7195686999",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "longitude",
+					"value": "75.8577258",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "phone",
+					"value": "96691665576",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1536903854009,
+			"name": "update Indivisual Profile",
+			"description": "",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"responses": []
+		},
+		{
+			"id": "d9bdcf93-1891-8982-2807-8d90037ea10d",
+			"headers": "authToken: d41067744101091d837bb46db8ac6100482a8dc2\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "d41067744101091d837bb46db8ac6100482a8dc2",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://www.connektus.com.au/service/users/addView",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "view_for",
+					"value": "2",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1537537341557,
+			"name": "addView",
+			"description": "",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"responses": []
+		},
+		{
+			"id": "dc0dc819-d1b9-24e7-9c48-49e5a6e66b1b",
+			"headers": "authToken: d722633778a93dcd9a33c522acda409cc00d04e3\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "d722633778a93dcd9a33c522acda409cc00d04e3",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "www.dev.uconnekt.com.au/service/requests/makeRequest",
+			"folder": null,
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "interviewerName",
+					"value": "Bhaskar Dutt Sharma",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "requestedFor",
+					"value": "302",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "location",
+					"value": "bhaskar dutt",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "latitude",
+					"value": "1115541244",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "longitude",
+					"value": "1211545444",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "date",
+					"value": "24-Aug-2018",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "time",
+					"value": "03:00 PM",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "Employer",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1535444628971,
+			"name": "interview request",
+			"description": null,
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"responses": []
+		},
+		{
+			"id": "de372297-8d16-862f-058d-a3f32c57e78a",
+			"headers": "",
+			"headerData": [],
+			"url": "http://uconnekt.com.au/service/resetPassword",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "email",
+					"value": "bhaskar.mindiii@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1533731937833,
+			"name": "Forgot Password",
+			"description": "",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"responses": []
+		},
+		{
+			"id": "e1fbd9e5-a4b3-9b83-e3ad-1ee7c0d200f3",
+			"headers": "authToken: 8b9249fb0c14a621aac4744b7c458d65fc650c8a\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "8b9249fb0c14a621aac4744b7c458d65fc650c8a",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost/uconnekt/service/users/sendNotification",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1531888869747,
+			"name": "sendNotification",
+			"description": "",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"responses": []
+		},
+		{
+			"id": "e31b12af-b14d-88dd-d373-7df2520ae113",
+			"headers": "authToken: f23ef49a138e0985b942b683f279e3dd0144dc74\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "f23ef49a138e0985b942b683f279e3dd0144dc74",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://dev.connektus.com.au/service/users/getDropdownList",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1539269802884,
+			"name": "getDropdownList",
+			"description": null,
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"responses": []
+		},
+		{
+			"id": "ec014bd9-23cc-070d-ee9c-da926a4c0208",
+			"headers": "authToken: 60ada3f559feb33c57b16a264afb2ad4d0004d2e\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "60ada3f559feb33c57b16a264afb2ad4d0004d2e",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://uconnekt.com.au/service/users/updateResume",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "resume",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "cv",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1529478272019,
+			"name": "updateResume",
+			"description": "",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"responses": [],
+			"collection_id": "a6e4632a-1563-30a5-322b-14ab0d49c544"
+		},
+		{
+			"id": "fe731caf-2086-6e47-a86a-40b1a07e1afc",
+			"headers": "authToken: asdasdsadasdsadsadsasadsa\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "asdasdsadasdsadsadsasadsa",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://www.dev.uconnekt.com.au/service/users/update_notification",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"data": [
+				{
+					"key": "id",
+					"value": "934",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "update_notification_status",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1536581078043,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "ff57a302-a2b4-e400-b966-9f5c12f76995",
+			"headers": "authToken: b4a9f9571f81ec984a21dcfc354a08e895982a83\n",
+			"headerData": [
+				{
+					"key": "authToken",
+					"value": "b4a9f9571f81ec984a21dcfc354a08e895982a83",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://uconnekt.com.au/service/users/updateRequestStatus",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "a6e4632a-1563-30a5-322b-14ab0d49c544",
+			"data": [
+				{
+					"key": "request_id",
+					"value": "1",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "status",
+					"value": "1",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"dataMode": "params",
+			"name": "updateRequestStatus",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1525097643513,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collection_id": "a6e4632a-1563-30a5-322b-14ab0d49c544"
+		}
+	]
+}

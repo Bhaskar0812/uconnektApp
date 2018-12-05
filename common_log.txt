@@ -1,0 +1,438 @@
+[2018-09-24 10:17:15] SELECT `userId`
+FROM `users`
+WHERE `email` = 'z1'
+AND `verifiedLink` = '7befd237a951675555334a54ae76b8cb'
+ LIMIT 1
+[2018-09-24 12:53:45] []
+[2018-09-24 12:53:45] SELECT COALESCE(u.fullName, "") as fullName, COALESCE(u.phone, "") as phone, COALESCE(um.description, "") as description, COALESCE(u.email, "") as email, COALESCE(u.businessName, "") as businessName, COALESCE(u.userType, "") as userType, COALESCE(job.jobTitleName, "") as jobTitleName, COALESCE(um.address, "") as address, COALESCE(um.city, "") as city, COALESCE(um.state, "") as state, COALESCE(um.country, "") as country, COALESCE(um.latitude, "") as latitude, COALESCE(um.longitude, "") as longitude, COALESCE(um.bio, "") as bio, COALESCE(aos.specializationName, "") as specializationName, COALESCE(CEIL(AVG(r.rating)/0.5) * 0.5, "") as rating, (case 
+                    when( um.company_logo = "" OR um.company_logo IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/company_logo/default_logo.jpg"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/company_logo/thumb/", um.company_logo) 
+                   END ) as company_logo, (case 
+                    when( u.profileImage = "" OR u.profileImage IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/profile/placeholder.png"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/profile/medium/", u.profileImage) 
+                   END ) as profileImage
+FROM `usermeta` as `um`
+JOIN `users` as `u` ON `um`.`user_id` = `u`.`userId`
+LEFT JOIN `user_specialization_mapping` as `usm` ON `usm`.`user_id` = `um`.`user_id`
+LEFT JOIN `specializations` as `aos` ON `usm`.`specialization_id` = `aos`.`specializationId`
+LEFT JOIN `job_titles` as `job` ON `um`.`jobTitle_id` = `job`.`jobTitleId`
+LEFT JOIN `reviews` as `r` ON `r`.`review_for` = `um`.`user_id`
+WHERE `um`.`user_id` = '12'
+[2018-09-24 12:54:20] []
+[2018-09-24 12:54:20] SELECT COALESCE(u.fullName, "") as fullName, COALESCE(u.phone, "") as phone, COALESCE(um.description, "") as description, COALESCE(u.email, "") as email, COALESCE(u.businessName, "") as businessName, COALESCE(u.userType, "") as userType, COALESCE(job.jobTitleName, "") as jobTitleName, COALESCE(um.address, "") as address, COALESCE(um.city, "") as city, COALESCE(um.state, "") as state, COALESCE(um.country, "") as country, COALESCE(um.latitude, "") as latitude, COALESCE(um.longitude, "") as longitude, COALESCE(um.bio, "") as bio, COALESCE(aos.specializationName, "") as specializationName, COALESCE(CEIL(AVG(r.rating)/0.5) * 0.5, "") as rating, (case 
+                    when( um.company_logo = "" OR um.company_logo IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/company_logo/default_logo.jpg"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/company_logo/thumb/", um.company_logo) 
+                   END ) as company_logo, (case 
+                    when( u.profileImage = "" OR u.profileImage IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/profile/placeholder.png"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/profile/medium/", u.profileImage) 
+                   END ) as profileImage
+FROM `usermeta` as `um`
+JOIN `users` as `u` ON `um`.`user_id` = `u`.`userId`
+LEFT JOIN `user_specialization_mapping` as `usm` ON `usm`.`user_id` = `um`.`user_id`
+LEFT JOIN `specializations` as `aos` ON `usm`.`specialization_id` = `aos`.`specializationId`
+LEFT JOIN `job_titles` as `job` ON `um`.`jobTitle_id` = `job`.`jobTitleId`
+LEFT JOIN `reviews` as `r` ON `r`.`review_for` = `um`.`user_id`
+WHERE `um`.`user_id` = '12'
+[2018-09-24 12:54:39] []
+[2018-09-24 12:54:39] SELECT COALESCE(u.fullName, "") as fullName, COALESCE(u.phone, "") as phone, COALESCE(um.description, "") as description, COALESCE(u.email, "") as email, COALESCE(u.businessName, "") as businessName, COALESCE(u.userType, "") as userType, COALESCE(job.jobTitleName, "") as jobTitleName, COALESCE(um.address, "") as address, COALESCE(um.city, "") as city, COALESCE(um.state, "") as state, COALESCE(um.country, "") as country, COALESCE(um.latitude, "") as latitude, COALESCE(um.longitude, "") as longitude, COALESCE(um.bio, "") as bio, COALESCE(aos.specializationName, "") as specializationName, COALESCE(CEIL(AVG(r.rating)/0.5) * 0.5, "") as rating, (case 
+                    when( um.company_logo = "" OR um.company_logo IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/company_logo/default_logo.jpg"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/company_logo/thumb/", um.company_logo) 
+                   END ) as company_logo, (case 
+                    when( u.profileImage = "" OR u.profileImage IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/profile/placeholder.png"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/profile/medium/", u.profileImage) 
+                   END ) as profileImage
+FROM `usermeta` as `um`
+JOIN `users` as `u` ON `um`.`user_id` = `u`.`userId`
+LEFT JOIN `user_specialization_mapping` as `usm` ON `usm`.`user_id` = `um`.`user_id`
+LEFT JOIN `specializations` as `aos` ON `usm`.`specialization_id` = `aos`.`specializationId`
+LEFT JOIN `job_titles` as `job` ON `um`.`jobTitle_id` = `job`.`jobTitleId`
+LEFT JOIN `reviews` as `r` ON `r`.`review_for` = `um`.`user_id`
+WHERE `um`.`user_id` = '12'
+[2018-09-24 12:57:27] []
+[2018-09-24 12:57:27] SELECT COALESCE(u.fullName, "") as fullName, COALESCE(u.phone, "") as phone, COALESCE(um.description, "") as description, COALESCE(u.email, "") as email, COALESCE(u.businessName, "") as businessName, COALESCE(u.userType, "") as userType, COALESCE(job.jobTitleName, "") as jobTitleName, COALESCE(um.address, "") as address, COALESCE(um.city, "") as city, COALESCE(um.state, "") as state, COALESCE(um.country, "") as country, COALESCE(um.latitude, "") as latitude, COALESCE(um.longitude, "") as longitude, COALESCE(um.bio, "") as bio, COALESCE(aos.specializationName, "") as specializationName, COALESCE(CEIL(AVG(r.rating)/0.5) * 0.5, "") as rating, (case 
+                    when( um.company_logo = "" OR um.company_logo IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/company_logo/default_logo.jpg"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/company_logo/thumb/", um.company_logo) 
+                   END ) as company_logo, (case 
+                    when( u.profileImage = "" OR u.profileImage IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/profile/placeholder.png"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/profile/medium/", u.profileImage) 
+                   END ) as profileImage
+FROM `usermeta` as `um`
+JOIN `users` as `u` ON `um`.`user_id` = `u`.`userId`
+LEFT JOIN `user_specialization_mapping` as `usm` ON `usm`.`user_id` = `um`.`user_id`
+LEFT JOIN `specializations` as `aos` ON `usm`.`specialization_id` = `aos`.`specializationId`
+LEFT JOIN `job_titles` as `job` ON `um`.`jobTitle_id` = `job`.`jobTitleId`
+LEFT JOIN `reviews` as `r` ON `r`.`review_for` = `um`.`user_id`
+WHERE `um`.`user_id` = '25'
+[2018-09-25 04:21:39] []
+[2018-09-25 04:21:39] SELECT COALESCE(u.fullName, "") as fullName, COALESCE(u.phone, "") as phone, COALESCE(um.description, "") as description, COALESCE(u.email, "") as email, COALESCE(u.businessName, "") as businessName, COALESCE(u.userType, "") as userType, COALESCE(job.jobTitleName, "") as jobTitleName, COALESCE(um.address, "") as address, COALESCE(um.city, "") as city, COALESCE(um.state, "") as state, COALESCE(um.country, "") as country, COALESCE(um.latitude, "") as latitude, COALESCE(um.longitude, "") as longitude, COALESCE(um.bio, "") as bio, COALESCE(aos.specializationName, "") as specializationName, COALESCE(CEIL(AVG(r.rating)/0.5) * 0.5, "") as rating, (case 
+                    when( um.company_logo = "" OR um.company_logo IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/company_logo/default_logo.jpg"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/company_logo/thumb/", um.company_logo) 
+                   END ) as company_logo, (case 
+                    when( u.profileImage = "" OR u.profileImage IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/profile/placeholder.png"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/profile/medium/", u.profileImage) 
+                   END ) as profileImage
+FROM `usermeta` as `um`
+JOIN `users` as `u` ON `um`.`user_id` = `u`.`userId`
+LEFT JOIN `user_specialization_mapping` as `usm` ON `usm`.`user_id` = `um`.`user_id`
+LEFT JOIN `specializations` as `aos` ON `usm`.`specialization_id` = `aos`.`specializationId`
+LEFT JOIN `job_titles` as `job` ON `um`.`jobTitle_id` = `job`.`jobTitleId`
+LEFT JOIN `reviews` as `r` ON `r`.`review_for` = `um`.`user_id`
+WHERE `um`.`user_id` = '10'
+[2018-09-25 06:59:13] []
+[2018-09-25 06:59:13] SELECT COALESCE(u.fullName, "") as fullName, COALESCE(u.phone, "") as phone, COALESCE(um.description, "") as description, COALESCE(u.email, "") as email, COALESCE(u.businessName, "") as businessName, COALESCE(u.userType, "") as userType, COALESCE(job.jobTitleName, "") as jobTitleName, COALESCE(um.address, "") as address, COALESCE(um.city, "") as city, COALESCE(um.state, "") as state, COALESCE(um.country, "") as country, COALESCE(um.latitude, "") as latitude, COALESCE(um.longitude, "") as longitude, COALESCE(um.bio, "") as bio, COALESCE(aos.specializationName, "") as specializationName, COALESCE(CEIL(AVG(r.rating)/0.5) * 0.5, "") as rating, (case 
+                    when( um.company_logo = "" OR um.company_logo IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/company_logo/default_logo.jpg"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/company_logo/thumb/", um.company_logo) 
+                   END ) as company_logo, (case 
+                    when( u.profileImage = "" OR u.profileImage IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/profile/placeholder.png"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/profile/medium/", u.profileImage) 
+                   END ) as profileImage
+FROM `usermeta` as `um`
+JOIN `users` as `u` ON `um`.`user_id` = `u`.`userId`
+LEFT JOIN `user_specialization_mapping` as `usm` ON `usm`.`user_id` = `um`.`user_id`
+LEFT JOIN `specializations` as `aos` ON `usm`.`specialization_id` = `aos`.`specializationId`
+LEFT JOIN `job_titles` as `job` ON `um`.`jobTitle_id` = `job`.`jobTitleId`
+LEFT JOIN `reviews` as `r` ON `r`.`review_for` = `um`.`user_id`
+WHERE `um`.`user_id` = '7'
+[2018-09-25 07:03:47] []
+[2018-09-25 07:03:47] SELECT COALESCE(u.fullName, "") as fullName, COALESCE(u.phone, "") as phone, COALESCE(um.description, "") as description, COALESCE(u.email, "") as email, COALESCE(u.businessName, "") as businessName, COALESCE(u.userType, "") as userType, COALESCE(job.jobTitleName, "") as jobTitleName, COALESCE(um.address, "") as address, COALESCE(um.city, "") as city, COALESCE(um.state, "") as state, COALESCE(um.country, "") as country, COALESCE(um.latitude, "") as latitude, COALESCE(um.longitude, "") as longitude, COALESCE(um.bio, "") as bio, COALESCE(aos.specializationName, "") as specializationName, COALESCE(CEIL(AVG(r.rating)/0.5) * 0.5, "") as rating, (case 
+                    when( um.company_logo = "" OR um.company_logo IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/company_logo/default_logo.jpg"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/company_logo/thumb/", um.company_logo) 
+                   END ) as company_logo, (case 
+                    when( u.profileImage = "" OR u.profileImage IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/profile/placeholder.png"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/profile/medium/", u.profileImage) 
+                   END ) as profileImage
+FROM `usermeta` as `um`
+JOIN `users` as `u` ON `um`.`user_id` = `u`.`userId`
+LEFT JOIN `user_specialization_mapping` as `usm` ON `usm`.`user_id` = `um`.`user_id`
+LEFT JOIN `specializations` as `aos` ON `usm`.`specialization_id` = `aos`.`specializationId`
+LEFT JOIN `job_titles` as `job` ON `um`.`jobTitle_id` = `job`.`jobTitleId`
+LEFT JOIN `reviews` as `r` ON `r`.`review_for` = `um`.`user_id`
+WHERE `um`.`user_id` = '7'
+[2018-09-25 07:03:56] []
+[2018-09-25 07:03:56] SELECT COALESCE(u.fullName, "") as fullName, COALESCE(u.userType, "") as userType, COALESCE(u.phone, "") as phone, COALESCE(u.email, "") as email, COALESCE(u.businessName, "") as businessName, COALESCE(job.jobTitleName, "") as jobTitleName, COALESCE(um.address, "") as address, COALESCE(um.city, "") as city, COALESCE(um.state, "") as state, COALESCE(um.country, "") as country, COALESCE(um.latitude, "") as latitude, COALESCE(um.longitude, "") as longitude, COALESCE(um.bio, "") as bio, COALESCE(aos.specializationName, "") as specializationName, COALESCE(CEIL(AVG(r.rating)/0.5) * 0.5, "") as rating, (case 
+                    when( um.company_logo = "" OR um.company_logo IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/company_logo/default_logo.jpg"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/company_logo/thumb/", um.company_logo) 
+                   END ) as company_logo, (case 
+                    when( u.profileImage = "" OR u.profileImage IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/profile/placeholder.png"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/profile/medium/", u.profileImage) 
+                   END ) as profileImage
+FROM `usermeta` as `um`
+JOIN `users` as `u` ON `um`.`user_id` = `u`.`userId`
+LEFT JOIN `user_specialization_mapping` as `usm` ON `usm`.`user_id` = `um`.`user_id`
+LEFT JOIN `specializations` as `aos` ON `usm`.`specialization_id` = `aos`.`specializationId`
+LEFT JOIN `user_experience` as `exp` ON `exp`.`user_id` = `u`.`userId`
+LEFT JOIN `job_titles` as `job` ON `exp`.`current_job_title` = `job`.`jobTitleId`
+LEFT JOIN `reviews` as `r` ON `r`.`review_for` = `um`.`user_id`
+WHERE `um`.`user_id` = '38'
+[2018-09-25 07:04:04] []
+[2018-09-25 07:04:04] SELECT COALESCE(u.fullName, "") as fullName, COALESCE(u.phone, "") as phone, COALESCE(um.description, "") as description, COALESCE(u.email, "") as email, COALESCE(u.businessName, "") as businessName, COALESCE(u.userType, "") as userType, COALESCE(job.jobTitleName, "") as jobTitleName, COALESCE(um.address, "") as address, COALESCE(um.city, "") as city, COALESCE(um.state, "") as state, COALESCE(um.country, "") as country, COALESCE(um.latitude, "") as latitude, COALESCE(um.longitude, "") as longitude, COALESCE(um.bio, "") as bio, COALESCE(aos.specializationName, "") as specializationName, COALESCE(CEIL(AVG(r.rating)/0.5) * 0.5, "") as rating, (case 
+                    when( um.company_logo = "" OR um.company_logo IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/company_logo/default_logo.jpg"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/company_logo/thumb/", um.company_logo) 
+                   END ) as company_logo, (case 
+                    when( u.profileImage = "" OR u.profileImage IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/profile/placeholder.png"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/profile/medium/", u.profileImage) 
+                   END ) as profileImage
+FROM `usermeta` as `um`
+JOIN `users` as `u` ON `um`.`user_id` = `u`.`userId`
+LEFT JOIN `user_specialization_mapping` as `usm` ON `usm`.`user_id` = `um`.`user_id`
+LEFT JOIN `specializations` as `aos` ON `usm`.`specialization_id` = `aos`.`specializationId`
+LEFT JOIN `job_titles` as `job` ON `um`.`jobTitle_id` = `job`.`jobTitleId`
+LEFT JOIN `reviews` as `r` ON `r`.`review_for` = `um`.`user_id`
+WHERE `um`.`user_id` = '7'
+[2018-09-25 07:04:40] []
+[2018-09-25 07:04:40] SELECT COALESCE(u.fullName, "") as fullName, COALESCE(u.userType, "") as userType, COALESCE(u.phone, "") as phone, COALESCE(u.email, "") as email, COALESCE(u.businessName, "") as businessName, COALESCE(job.jobTitleName, "") as jobTitleName, COALESCE(um.address, "") as address, COALESCE(um.city, "") as city, COALESCE(um.state, "") as state, COALESCE(um.country, "") as country, COALESCE(um.latitude, "") as latitude, COALESCE(um.longitude, "") as longitude, COALESCE(um.bio, "") as bio, COALESCE(aos.specializationName, "") as specializationName, COALESCE(CEIL(AVG(r.rating)/0.5) * 0.5, "") as rating, (case 
+                    when( um.company_logo = "" OR um.company_logo IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/company_logo/default_logo.jpg"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/company_logo/thumb/", um.company_logo) 
+                   END ) as company_logo, (case 
+                    when( u.profileImage = "" OR u.profileImage IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/profile/placeholder.png"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/profile/medium/", u.profileImage) 
+                   END ) as profileImage
+FROM `usermeta` as `um`
+JOIN `users` as `u` ON `um`.`user_id` = `u`.`userId`
+LEFT JOIN `user_specialization_mapping` as `usm` ON `usm`.`user_id` = `um`.`user_id`
+LEFT JOIN `specializations` as `aos` ON `usm`.`specialization_id` = `aos`.`specializationId`
+LEFT JOIN `user_experience` as `exp` ON `exp`.`user_id` = `u`.`userId`
+LEFT JOIN `job_titles` as `job` ON `exp`.`current_job_title` = `job`.`jobTitleId`
+LEFT JOIN `reviews` as `r` ON `r`.`review_for` = `um`.`user_id`
+WHERE `um`.`user_id` = '28'
+[2018-09-25 07:05:27] []
+[2018-09-25 07:05:27] SELECT COALESCE(u.fullName, "") as fullName, COALESCE(u.phone, "") as phone, COALESCE(um.description, "") as description, COALESCE(u.email, "") as email, COALESCE(u.businessName, "") as businessName, COALESCE(u.userType, "") as userType, COALESCE(job.jobTitleName, "") as jobTitleName, COALESCE(um.address, "") as address, COALESCE(um.city, "") as city, COALESCE(um.state, "") as state, COALESCE(um.country, "") as country, COALESCE(um.latitude, "") as latitude, COALESCE(um.longitude, "") as longitude, COALESCE(um.bio, "") as bio, COALESCE(aos.specializationName, "") as specializationName, COALESCE(CEIL(AVG(r.rating)/0.5) * 0.5, "") as rating, (case 
+                    when( um.company_logo = "" OR um.company_logo IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/company_logo/default_logo.jpg"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/company_logo/thumb/", um.company_logo) 
+                   END ) as company_logo, (case 
+                    when( u.profileImage = "" OR u.profileImage IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/profile/placeholder.png"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/profile/medium/", u.profileImage) 
+                   END ) as profileImage
+FROM `usermeta` as `um`
+JOIN `users` as `u` ON `um`.`user_id` = `u`.`userId`
+LEFT JOIN `user_specialization_mapping` as `usm` ON `usm`.`user_id` = `um`.`user_id`
+LEFT JOIN `specializations` as `aos` ON `usm`.`specialization_id` = `aos`.`specializationId`
+LEFT JOIN `job_titles` as `job` ON `um`.`jobTitle_id` = `job`.`jobTitleId`
+LEFT JOIN `reviews` as `r` ON `r`.`review_for` = `um`.`user_id`
+WHERE `um`.`user_id` = '7'
+[2018-09-25 11:10:35] []
+[2018-09-25 11:10:35] SELECT COALESCE(u.fullName, "") as fullName, COALESCE(u.userType, "") as userType, COALESCE(u.phone, "") as phone, COALESCE(u.email, "") as email, COALESCE(u.businessName, "") as businessName, COALESCE(job.jobTitleName, "") as jobTitleName, COALESCE(um.address, "") as address, COALESCE(um.city, "") as city, COALESCE(um.state, "") as state, COALESCE(um.country, "") as country, COALESCE(um.latitude, "") as latitude, COALESCE(um.longitude, "") as longitude, COALESCE(um.bio, "") as bio, COALESCE(aos.specializationName, "") as specializationName, COALESCE(CEIL(AVG(r.rating)/0.5) * 0.5, "") as rating, (case 
+                    when( um.company_logo = "" OR um.company_logo IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/company_logo/default_logo.jpg"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/company_logo/thumb/", um.company_logo) 
+                   END ) as company_logo, (case 
+                    when( u.profileImage = "" OR u.profileImage IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/profile/placeholder.png"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/profile/", u.profileImage) 
+                   END ) as profileImage
+FROM `usermeta` as `um`
+JOIN `users` as `u` ON `um`.`user_id` = `u`.`userId`
+LEFT JOIN `user_specialization_mapping` as `usm` ON `usm`.`user_id` = `um`.`user_id`
+LEFT JOIN `specializations` as `aos` ON `usm`.`specialization_id` = `aos`.`specializationId`
+LEFT JOIN `user_experience` as `exp` ON `exp`.`user_id` = `u`.`userId`
+LEFT JOIN `job_titles` as `job` ON `exp`.`current_job_title` = `job`.`jobTitleId`
+LEFT JOIN `reviews` as `r` ON `r`.`review_for` = `um`.`user_id`
+WHERE `um`.`user_id` = '21'
+[2018-09-25 11:53:18] []
+[2018-09-25 11:53:18] SELECT COALESCE(u.fullName, "") as fullName, COALESCE(u.phone, "") as phone, COALESCE(um.description, "") as description, COALESCE(u.email, "") as email, COALESCE(u.businessName, "") as businessName, COALESCE(u.userType, "") as userType, COALESCE(job.jobTitleName, "") as jobTitleName, COALESCE(um.address, "") as address, COALESCE(um.city, "") as city, COALESCE(um.state, "") as state, COALESCE(um.country, "") as country, COALESCE(um.latitude, "") as latitude, COALESCE(um.longitude, "") as longitude, COALESCE(um.bio, "") as bio, COALESCE(aos.specializationName, "") as specializationName, COALESCE(CEIL(AVG(r.rating)/0.5) * 0.5, "") as rating, (case 
+                    when( um.company_logo = "" OR um.company_logo IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/company_logo/default_logo.jpg"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/company_logo/thumb/", um.company_logo) 
+                   END ) as company_logo, (case 
+                    when( u.profileImage = "" OR u.profileImage IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/profile/placeholder.png"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/profile/", u.profileImage) 
+                   END ) as profileImage
+FROM `usermeta` as `um`
+JOIN `users` as `u` ON `um`.`user_id` = `u`.`userId`
+LEFT JOIN `user_specialization_mapping` as `usm` ON `usm`.`user_id` = `um`.`user_id`
+LEFT JOIN `specializations` as `aos` ON `usm`.`specialization_id` = `aos`.`specializationId`
+LEFT JOIN `job_titles` as `job` ON `um`.`jobTitle_id` = `job`.`jobTitleId`
+LEFT JOIN `reviews` as `r` ON `r`.`review_for` = `um`.`user_id`
+WHERE `um`.`user_id` = '12'
+[2018-09-25 11:59:01] []
+[2018-09-25 11:59:01] SELECT COALESCE(u.fullName, "") as fullName, COALESCE(u.phone, "") as phone, COALESCE(um.description, "") as description, COALESCE(u.email, "") as email, COALESCE(u.businessName, "") as businessName, COALESCE(u.userType, "") as userType, COALESCE(job.jobTitleName, "") as jobTitleName, COALESCE(um.address, "") as address, COALESCE(um.city, "") as city, COALESCE(um.state, "") as state, COALESCE(um.country, "") as country, COALESCE(um.latitude, "") as latitude, COALESCE(um.longitude, "") as longitude, COALESCE(um.bio, "") as bio, COALESCE(aos.specializationName, "") as specializationName, COALESCE(CEIL(AVG(r.rating)/0.5) * 0.5, "") as rating, (case 
+                    when( um.company_logo = "" OR um.company_logo IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/company_logo/default_logo.jpg"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/company_logo/thumb/", um.company_logo) 
+                   END ) as company_logo, (case 
+                    when( u.profileImage = "" OR u.profileImage IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/profile/placeholder.png"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/profile/", u.profileImage) 
+                   END ) as profileImage
+FROM `usermeta` as `um`
+JOIN `users` as `u` ON `um`.`user_id` = `u`.`userId`
+LEFT JOIN `user_specialization_mapping` as `usm` ON `usm`.`user_id` = `um`.`user_id`
+LEFT JOIN `specializations` as `aos` ON `usm`.`specialization_id` = `aos`.`specializationId`
+LEFT JOIN `job_titles` as `job` ON `um`.`jobTitle_id` = `job`.`jobTitleId`
+LEFT JOIN `reviews` as `r` ON `r`.`review_for` = `um`.`user_id`
+WHERE `um`.`user_id` = '12'
+[2018-09-25 11:59:15] []
+[2018-09-25 11:59:15] SELECT COALESCE(u.fullName, "") as fullName, COALESCE(u.phone, "") as phone, COALESCE(um.description, "") as description, COALESCE(u.email, "") as email, COALESCE(u.businessName, "") as businessName, COALESCE(u.userType, "") as userType, COALESCE(job.jobTitleName, "") as jobTitleName, COALESCE(um.address, "") as address, COALESCE(um.city, "") as city, COALESCE(um.state, "") as state, COALESCE(um.country, "") as country, COALESCE(um.latitude, "") as latitude, COALESCE(um.longitude, "") as longitude, COALESCE(um.bio, "") as bio, COALESCE(aos.specializationName, "") as specializationName, COALESCE(CEIL(AVG(r.rating)/0.5) * 0.5, "") as rating, (case 
+                    when( um.company_logo = "" OR um.company_logo IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/company_logo/default_logo.jpg"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/company_logo/thumb/", um.company_logo) 
+                   END ) as company_logo, (case 
+                    when( u.profileImage = "" OR u.profileImage IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/profile/placeholder.png"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/profile/", u.profileImage) 
+                   END ) as profileImage
+FROM `usermeta` as `um`
+JOIN `users` as `u` ON `um`.`user_id` = `u`.`userId`
+LEFT JOIN `user_specialization_mapping` as `usm` ON `usm`.`user_id` = `um`.`user_id`
+LEFT JOIN `specializations` as `aos` ON `usm`.`specialization_id` = `aos`.`specializationId`
+LEFT JOIN `job_titles` as `job` ON `um`.`jobTitle_id` = `job`.`jobTitleId`
+LEFT JOIN `reviews` as `r` ON `r`.`review_for` = `um`.`user_id`
+WHERE `um`.`user_id` = '12'
+[2018-09-25 12:01:43] []
+[2018-09-25 12:01:43] SELECT COALESCE(u.fullName, "") as fullName, COALESCE(u.phone, "") as phone, COALESCE(um.description, "") as description, COALESCE(u.email, "") as email, COALESCE(u.businessName, "") as businessName, COALESCE(u.userType, "") as userType, COALESCE(job.jobTitleName, "") as jobTitleName, COALESCE(um.address, "") as address, COALESCE(um.city, "") as city, COALESCE(um.state, "") as state, COALESCE(um.country, "") as country, COALESCE(um.latitude, "") as latitude, COALESCE(um.longitude, "") as longitude, COALESCE(um.bio, "") as bio, COALESCE(aos.specializationName, "") as specializationName, COALESCE(CEIL(AVG(r.rating)/0.5) * 0.5, "") as rating, (case 
+                    when( um.company_logo = "" OR um.company_logo IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/company_logo/default_logo.jpg"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/company_logo/thumb/", um.company_logo) 
+                   END ) as company_logo, (case 
+                    when( u.profileImage = "" OR u.profileImage IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/profile/placeholder.png"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/profile/", u.profileImage) 
+                   END ) as profileImage
+FROM `usermeta` as `um`
+JOIN `users` as `u` ON `um`.`user_id` = `u`.`userId`
+LEFT JOIN `user_specialization_mapping` as `usm` ON `usm`.`user_id` = `um`.`user_id`
+LEFT JOIN `specializations` as `aos` ON `usm`.`specialization_id` = `aos`.`specializationId`
+LEFT JOIN `job_titles` as `job` ON `um`.`jobTitle_id` = `job`.`jobTitleId`
+LEFT JOIN `reviews` as `r` ON `r`.`review_for` = `um`.`user_id`
+WHERE `um`.`user_id` = '12'
+[2018-09-25 12:02:06] []
+[2018-09-25 12:02:06] SELECT COALESCE(u.fullName, "") as fullName, COALESCE(u.phone, "") as phone, COALESCE(um.description, "") as description, COALESCE(u.email, "") as email, COALESCE(u.businessName, "") as businessName, COALESCE(u.userType, "") as userType, COALESCE(job.jobTitleName, "") as jobTitleName, COALESCE(um.address, "") as address, COALESCE(um.city, "") as city, COALESCE(um.state, "") as state, COALESCE(um.country, "") as country, COALESCE(um.latitude, "") as latitude, COALESCE(um.longitude, "") as longitude, COALESCE(um.bio, "") as bio, COALESCE(aos.specializationName, "") as specializationName, COALESCE(CEIL(AVG(r.rating)/0.5) * 0.5, "") as rating, (case 
+                    when( um.company_logo = "" OR um.company_logo IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/company_logo/default_logo.jpg"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/company_logo/thumb/", um.company_logo) 
+                   END ) as company_logo, (case 
+                    when( u.profileImage = "" OR u.profileImage IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/profile/placeholder.png"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/profile/", u.profileImage) 
+                   END ) as profileImage
+FROM `usermeta` as `um`
+JOIN `users` as `u` ON `um`.`user_id` = `u`.`userId`
+LEFT JOIN `user_specialization_mapping` as `usm` ON `usm`.`user_id` = `um`.`user_id`
+LEFT JOIN `specializations` as `aos` ON `usm`.`specialization_id` = `aos`.`specializationId`
+LEFT JOIN `job_titles` as `job` ON `um`.`jobTitle_id` = `job`.`jobTitleId`
+LEFT JOIN `reviews` as `r` ON `r`.`review_for` = `um`.`user_id`
+WHERE `um`.`user_id` = '12'
+[2018-09-25 13:42:09] []
+[2018-09-25 13:42:09] SELECT COALESCE(u.fullName, "") as fullName, COALESCE(u.phone, "") as phone, COALESCE(um.description, "") as description, COALESCE(u.email, "") as email, COALESCE(u.businessName, "") as businessName, COALESCE(u.userType, "") as userType, COALESCE(job.jobTitleName, "") as jobTitleName, COALESCE(um.address, "") as address, COALESCE(um.city, "") as city, COALESCE(um.state, "") as state, COALESCE(um.country, "") as country, COALESCE(um.latitude, "") as latitude, COALESCE(um.longitude, "") as longitude, COALESCE(um.bio, "") as bio, COALESCE(aos.specializationName, "") as specializationName, COALESCE(CEIL(AVG(r.rating)/0.5) * 0.5, "") as rating, (case 
+                    when( um.company_logo = "" OR um.company_logo IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/company_logo/default_logo.jpg"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/company_logo/thumb/", um.company_logo) 
+                   END ) as company_logo, (case 
+                    when( u.profileImage = "" OR u.profileImage IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/profile/placeholder.png"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/profile/", u.profileImage) 
+                   END ) as profileImage
+FROM `usermeta` as `um`
+JOIN `users` as `u` ON `um`.`user_id` = `u`.`userId`
+LEFT JOIN `user_specialization_mapping` as `usm` ON `usm`.`user_id` = `um`.`user_id`
+LEFT JOIN `specializations` as `aos` ON `usm`.`specialization_id` = `aos`.`specializationId`
+LEFT JOIN `job_titles` as `job` ON `um`.`jobTitle_id` = `job`.`jobTitleId`
+LEFT JOIN `reviews` as `r` ON `r`.`review_for` = `um`.`user_id`
+WHERE `um`.`user_id` = '12'
+[2018-09-25 13:42:27] []
+[2018-09-25 13:42:27] SELECT COALESCE(u.fullName, "") as fullName, COALESCE(u.phone, "") as phone, COALESCE(um.description, "") as description, COALESCE(u.email, "") as email, COALESCE(u.businessName, "") as businessName, COALESCE(u.userType, "") as userType, COALESCE(job.jobTitleName, "") as jobTitleName, COALESCE(um.address, "") as address, COALESCE(um.city, "") as city, COALESCE(um.state, "") as state, COALESCE(um.country, "") as country, COALESCE(um.latitude, "") as latitude, COALESCE(um.longitude, "") as longitude, COALESCE(um.bio, "") as bio, COALESCE(aos.specializationName, "") as specializationName, COALESCE(CEIL(AVG(r.rating)/0.5) * 0.5, "") as rating, (case 
+                    when( um.company_logo = "" OR um.company_logo IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/company_logo/default_logo.jpg"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/company_logo/thumb/", um.company_logo) 
+                   END ) as company_logo, (case 
+                    when( u.profileImage = "" OR u.profileImage IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/profile/placeholder.png"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/profile/", u.profileImage) 
+                   END ) as profileImage
+FROM `usermeta` as `um`
+JOIN `users` as `u` ON `um`.`user_id` = `u`.`userId`
+LEFT JOIN `user_specialization_mapping` as `usm` ON `usm`.`user_id` = `um`.`user_id`
+LEFT JOIN `specializations` as `aos` ON `usm`.`specialization_id` = `aos`.`specializationId`
+LEFT JOIN `job_titles` as `job` ON `um`.`jobTitle_id` = `job`.`jobTitleId`
+LEFT JOIN `reviews` as `r` ON `r`.`review_for` = `um`.`user_id`
+WHERE `um`.`user_id` = '12'
+[2018-09-25 13:42:33] []
+[2018-09-25 13:42:33] SELECT COALESCE(u.fullName, "") as fullName, COALESCE(u.phone, "") as phone, COALESCE(um.description, "") as description, COALESCE(u.email, "") as email, COALESCE(u.businessName, "") as businessName, COALESCE(u.userType, "") as userType, COALESCE(job.jobTitleName, "") as jobTitleName, COALESCE(um.address, "") as address, COALESCE(um.city, "") as city, COALESCE(um.state, "") as state, COALESCE(um.country, "") as country, COALESCE(um.latitude, "") as latitude, COALESCE(um.longitude, "") as longitude, COALESCE(um.bio, "") as bio, COALESCE(aos.specializationName, "") as specializationName, COALESCE(CEIL(AVG(r.rating)/0.5) * 0.5, "") as rating, (case 
+                    when( um.company_logo = "" OR um.company_logo IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/company_logo/default_logo.jpg"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/company_logo/thumb/", um.company_logo) 
+                   END ) as company_logo, (case 
+                    when( u.profileImage = "" OR u.profileImage IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/profile/placeholder.png"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/profile/", u.profileImage) 
+                   END ) as profileImage
+FROM `usermeta` as `um`
+JOIN `users` as `u` ON `um`.`user_id` = `u`.`userId`
+LEFT JOIN `user_specialization_mapping` as `usm` ON `usm`.`user_id` = `um`.`user_id`
+LEFT JOIN `specializations` as `aos` ON `usm`.`specialization_id` = `aos`.`specializationId`
+LEFT JOIN `job_titles` as `job` ON `um`.`jobTitle_id` = `job`.`jobTitleId`
+LEFT JOIN `reviews` as `r` ON `r`.`review_for` = `um`.`user_id`
+WHERE `um`.`user_id` = '12'
+[2018-09-25 13:42:42] []
+[2018-09-25 13:42:42] SELECT COALESCE(u.fullName, "") as fullName, COALESCE(u.phone, "") as phone, COALESCE(um.description, "") as description, COALESCE(u.email, "") as email, COALESCE(u.businessName, "") as businessName, COALESCE(u.userType, "") as userType, COALESCE(job.jobTitleName, "") as jobTitleName, COALESCE(um.address, "") as address, COALESCE(um.city, "") as city, COALESCE(um.state, "") as state, COALESCE(um.country, "") as country, COALESCE(um.latitude, "") as latitude, COALESCE(um.longitude, "") as longitude, COALESCE(um.bio, "") as bio, COALESCE(aos.specializationName, "") as specializationName, COALESCE(CEIL(AVG(r.rating)/0.5) * 0.5, "") as rating, (case 
+                    when( um.company_logo = "" OR um.company_logo IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/company_logo/default_logo.jpg"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/company_logo/thumb/", um.company_logo) 
+                   END ) as company_logo, (case 
+                    when( u.profileImage = "" OR u.profileImage IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/profile/placeholder.png"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/profile/", u.profileImage) 
+                   END ) as profileImage
+FROM `usermeta` as `um`
+JOIN `users` as `u` ON `um`.`user_id` = `u`.`userId`
+LEFT JOIN `user_specialization_mapping` as `usm` ON `usm`.`user_id` = `um`.`user_id`
+LEFT JOIN `specializations` as `aos` ON `usm`.`specialization_id` = `aos`.`specializationId`
+LEFT JOIN `job_titles` as `job` ON `um`.`jobTitle_id` = `job`.`jobTitleId`
+LEFT JOIN `reviews` as `r` ON `r`.`review_for` = `um`.`user_id`
+WHERE `um`.`user_id` = '12'
+[2018-09-25 21:34:10] []
+[2018-09-25 21:34:10] SELECT COALESCE(u.fullName, "") as fullName, COALESCE(u.phone, "") as phone, COALESCE(um.description, "") as description, COALESCE(u.email, "") as email, COALESCE(u.businessName, "") as businessName, COALESCE(u.userType, "") as userType, COALESCE(job.jobTitleName, "") as jobTitleName, COALESCE(um.address, "") as address, COALESCE(um.city, "") as city, COALESCE(um.state, "") as state, COALESCE(um.country, "") as country, COALESCE(um.latitude, "") as latitude, COALESCE(um.longitude, "") as longitude, COALESCE(um.bio, "") as bio, COALESCE(aos.specializationName, "") as specializationName, COALESCE(CEIL(AVG(r.rating)/0.5) * 0.5, "") as rating, (case 
+                    when( um.company_logo = "" OR um.company_logo IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/company_logo/default_logo.jpg"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/company_logo/thumb/", um.company_logo) 
+                   END ) as company_logo, (case 
+                    when( u.profileImage = "" OR u.profileImage IS NULL) 
+                    THEN "https://www.connektus.com.au/uploads/profile/placeholder.png"
+                    ELSE
+                    concat("https://www.connektus.com.au/uploads/profile/", u.profileImage) 
+                   END ) as profileImage
+FROM `usermeta` as `um`
+JOIN `users` as `u` ON `um`.`user_id` = `u`.`userId`
+LEFT JOIN `user_specialization_mapping` as `usm` ON `usm`.`user_id` = `um`.`user_id`
+LEFT JOIN `specializations` as `aos` ON `usm`.`specialization_id` = `aos`.`specializationId`
+LEFT JOIN `job_titles` as `job` ON `um`.`jobTitle_id` = `job`.`jobTitleId`
+LEFT JOIN `reviews` as `r` ON `r`.`review_for` = `um`.`user_id`
+WHERE `um`.`user_id` = '39'
+[2018-09-26 05:22:07] {"fullName":"sachin","userType":"business","password":"111111","email":"b.haskarmindiii@gmail.com","businessName":"Hello Shubham","phone":"9691665576"}
+[2018-09-26 05:27:57] {"fullName":"sachin","userType":"business","password":"111111","email":"b.haskarmindiii@gmail.com","businessName":"Hello Shubham","phone":"9691665576"}
+[2018-09-26 05:29:02] {"fullName":"sachin","userType":"business","password":"111111","email":"b.haskarmindiii@gmail.com","businessName":"Hello Shubham","phone":"9691665576"}
+[2018-09-26 05:29:09] {"fullName":"sachin","userType":"business","password":"111111","email":"bh.askarmindiii@gmail.com","businessName":"Hello Shubham","phone":"9691665576"}
+[2018-09-26 06:30:57] {"fullName":"sachin","userType":"business","password":"111111","email":"bh.askarmindiii@gmail.com","businessName":"Hello Shubham","phone":"9691665576"}
+[2018-09-26 06:31:03] {"fullName":"sachin","userType":"business","password":"111111","email":"bha.skarmindiii@gmail.com","businessName":"Hello Shubham","phone":"9691665576"}
+[2018-09-26 06:36:17] {"fullName":"sachin","userType":"business","password":"111111","email":"bha.skarmindiii@gmail.com","businessName":"Hello Shubham","phone":"9691665576"}
+[2018-09-26 06:36:24] {"fullName":"sachin","userType":"business","password":"111111","email":"bhas.karmindiii@gmail.com","businessName":"Hello Shubham","phone":"9691665576"}
+[2018-09-26 06:37:00] {"fullName":"sachin","userType":"business","password":"111111","email":"bhas.karmindiii@gmail.com","businessName":"Hello Shubham","phone":"9691665576"}
+[2018-09-26 06:37:08] {"fullName":"sachin","userType":"business","password":"111111","email":"bhask.armindiii@gmail.com","businessName":"Hello Shubham","phone":"9691665576"}
+[2018-09-26 06:37:57] {"fullName":"sachin","userType":"business","password":"111111","email":"bhask.armindiii@gmail.com","businessName":"Hello Shubham","phone":"9691665576"}
+[2018-09-26 06:37:59] {"fullName":"sachin","userType":"business","password":"111111","email":"bhask.armindiii@gmail.com","businessName":"Hello Shubham","phone":"9691665576"}
